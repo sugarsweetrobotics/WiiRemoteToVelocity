@@ -199,7 +199,7 @@ class WiiRemoteToVelocity(OpenRTM_aist.DataFlowComponentBase):
 			return RTC.RTC_OK
 
 		vx = self.orientation.r * (-0.6)
-		va = self.orientation.p * (-0.1)
+		va = self.orientation.p * (0.05)
 		
 		self._d_velocity.data.vx = vx
 		self._d_velocity.data.va = va
